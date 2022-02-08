@@ -56,7 +56,6 @@ public class Impresora {
             this.capacidadToner = 100;
             this.cantidadToner = this.capacidadToner;
         }
-
     }
 
     /**

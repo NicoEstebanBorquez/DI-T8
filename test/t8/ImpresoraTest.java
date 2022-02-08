@@ -1,12 +1,10 @@
 package t8;
 
-import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Assert;
-import org.junit.Before;
+import static org.junit.Assert.assertEquals;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import static org.junit.Assert.*;
 
 /**
  * @author Nicolas Esteban Borquez 55124290Y
@@ -45,7 +43,6 @@ public class ImpresoraTest {
 
         Impresora test2 = new Impresora(-250);
         assertEquals(100, test2.getCapacidadToner());
-
     }
 
     @Test
@@ -53,10 +50,10 @@ public class ImpresoraTest {
         System.out.println("Probando método 'imprime'");
 
         //Impresora1 creada con una capacidad de 500, debería tener ahora 480
-        Assert.assertEquals(480, impresora1.getCantidadToner());
+        assertEquals(480, impresora1.getCantidadToner());
 
         //Impresora2 creada con una capacidad de 200, debería tener ahora 180
-        Assert.assertEquals(180, impresora2.getCantidadToner());
+        assertEquals(180, impresora2.getCantidadToner());
     }
 
     @Test
